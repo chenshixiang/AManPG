@@ -29,5 +29,10 @@ Requirements
 - The initial stage of demo_amanpg_scca should use the MATLAB package SCCALab, which you can download from http://www-stat.wharton.upenn.edu/～zongming/research.html  
 -  To run SCCALab, you also need the TFOCS package.
 
+----------------
+License
+---------------
+MIT
+
 
 If you have any questions or find any bugs, feel free to contact Shixiang Chen <chenshxiang@gmail.com>.
