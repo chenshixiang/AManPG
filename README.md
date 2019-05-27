@@ -9,7 +9,8 @@ The Chinese University of Hong Kong
 2019
 
 ----------------------------------
-
+Citation
+--------------------------------
 This package contains the code used in the paper " An Alternating Manifold Proximal Gradient Method for Sparse PCA and Sparse CCA". 
 
 This code has been tested to run in MATLAB R2018b.
