@@ -31,7 +31,7 @@ type = option.type;
 h=@(X) sum(mu.*sum(abs(X)));
 maxiter =option.maxiter;
 tol = option.tol;
-if d>2*m
+if d<2*m
     B = B'*B;
     type = 1;
 end
