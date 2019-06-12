@@ -71,7 +71,9 @@ if lambda ~= inf %elastic net parameter isn't inf
         Y = proximal_l1(Y-t*2*(AY-AX+lambda*Y), mu*t,n);
         if type == 0; AY = B'*(B*Y);   else;  AY = B*Y;     end
         % update X
-        gx = -2*AY;   xgx = gx'*X;     RGX = gx - X*xgx;  %canonical riemannian gradient
+        gx = -2*AY;   xgx = gx'*X;    
+        %RGX = gx - X*xgx;  %canonical riemannian gradient
+        RGX = gx - 0.5*X*(xgx+xgx');
         TX = X - tau*RGX;
         GtG = RGX'*RGX;
         [U, SIGMA] = eig(eye(n)+ tau^2*GtG);   SIGMA = diag(SIGMA);  J =U*diag(sqrt(1./SIGMA))*U';
