@@ -11,7 +11,7 @@ end
 
 x_prox = Act_set.*(1- lambda./nr).*b;
 for i = 1:n
-    delta{i} = (eye(r) - lambda./nr(i).*(eye(r) - b(i,:)'*b(i,:)./nr(i)))*Act_set(i);
+    delta{i} = (eye(r) - lambda./nr(i).*(eye(r) - b(i,:)'*b(i,:)./nr(i)^2))*Act_set(i);
 end
 % diag = 1 - lambda*ones(size(b))./nr + lambda.*b.^2./(nr.^3);
 % diag = Act_set.*diag;
